@@ -59,3 +59,23 @@
     	content: none;
     }
 }
+
+//5
+.owl-theme {
+	.owl-dots {
+		.owl-dot span {
+			width: 35px;
+			height: 7px;
+			border-radius: 5px;
+		}
+		.active{
+			span{
+				background: $second-color !important;
+			}
+		}
+		.owl-dot:hover span {
+			background: $second-color !important;
+		}
+	}
+}
+

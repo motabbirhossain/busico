@@ -297,6 +297,16 @@ Author: RRDevs
             }
         });
 
+        //5
+        $(".owl-carousel").owlCarousel({ 
+            items: 1,
+            loop: true,
+            autoplayTimeout: 8000,
+            autoplay:true,
+            center: true,                                                                      
+        });
+
+
         $(".testimonial-carousel-active").owlCarousel({        
             items: 1,     
             dots: false,

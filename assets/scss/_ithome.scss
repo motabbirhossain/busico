@@ -8,6 +8,7 @@
     background:linear-gradient( to top, #F2F1FC, #FCEFEC );
     .it-wrapper{
         padding: 110px 0 110px 0 ;
+        position: relative;
         .banner-text{
             h6{
                 color: $second-color;
@@ -25,6 +26,12 @@
                 span{
                    color: $second-color;
                 }
+                @media (max-width:600px) {
+                    font-size: 45px;
+                }
+                @media (max-width:425px) {
+                    font-size: 38px;
+                }
             }
             p{
                 font-weight: 400;
@@ -32,9 +39,15 @@
                 font-size: 20px;
             }
         }
+        .exprence-image{
+            position: absolute;
+            right: -10%;
+            top: 0%;
+        }
     }
     //
     .brand-wepper{
+        padding-top: 150px;
         padding-bottom: 100px;
         .brand-head{
             h5{
@@ -50,6 +63,9 @@
     //
     .info-wepper{
         padding-bottom: 190px;
+        @media (max-width:768px) {
+            padding-bottom: 70px;
+        }
         .info-head{
             h6{
                 color: $second-color;
@@ -72,6 +88,9 @@
         .service-wepper{
             overflow: hidden;
             position: absolute;
+            @media (max-width:911px) {
+                position: relative !important;
+            }
             bottom: -11%;
             z-index: 7;
             .service-box{
@@ -162,35 +181,24 @@
         }
         h2{
            @include sectionhead-h1;
+
         }
     }
 }
 
-//2
+//2 
 .exprence-wepper{
     position: relative;
     padding-top: 260px;
     padding-bottom: 110px;
+    @media (max-width:768px) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    }
     .exprence-image{
-        position: relative;
-        .exprence{
-            position: absolute;
-            top: 0%;
-            right:0% ;
-            background-color: $div-color;
-            display: inline-block;
-            h2{
-                color: $second-color;
-                font-size: 48px;
-                margin-bottom:5px;
-                font-family: $body-font;
-            }
-            h3{
-                margin-bottom:5px;
-                text-transform: capitalize;
-                font-family: $body-font;
-            }
-        }
+        width: 100%;
+        position: absolute;
+        left: -10%;
     }
     .section-title-2{
         h5{
@@ -236,18 +244,23 @@
             }
         }
     }
+    // .exprence-image{
+    //     position: absolute;
+    //     top: 0%;
+    //     left: -45%;
+    // }
 
-    .shap-section-2{
-        position: absolute;
-        bottom: 40%;
-        right: 10%;
-        @media (max-width:1730px) {
-            left: 1%;
-        }
-        @media (max-width:1440px) {
-            display: none;
-        }
-    }
+    // .shap-section-2{
+    //     position: absolute;
+    //     bottom: 40%;
+    //     right: 10%;
+    //     @media (max-width:1730px) {
+    //         right: 1%;
+    //     }
+    //     @media (max-width:1440px) {
+    //         display: none;
+    //     }
+    // }
 }
 .container-fluid-5{
     width: 1430px;
@@ -525,6 +538,7 @@
                 }
             }
             .content{
+                margin-bottom: 30px;
                 h3{
                     color: $white;
                     font-family: $body-font;
@@ -695,12 +709,11 @@
         .static{
            @include transition(0.4s);
             height:50px;
-            opacity: 0;
             width: 200px;
             border-bottom-right-radius: 90%;
             border-bottom-left-radius: 90%;
             top: 25%;
-            right:-175px;
+            right:-75px;
             position: absolute;
             transform: rotate(90deg);
             background-color:#F4DBD4;
@@ -711,13 +724,6 @@
                 font-weight: 500;
                 font-size: 15px;
             }
-        }
-        &:hover{
-            .static{
-                opacity: 1;
-                right:-75px;
-            }
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
         }
     }
     .shap-section-2{
@@ -824,6 +830,7 @@
         }
     }
 }
+
 .company-wepper{
     overflow: hidden;
     background-color: #FBFCFE;

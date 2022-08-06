@@ -645,7 +645,7 @@
             }
             .footer-social-icon{
                 a{
-                   @include icon(50px,50px,#26376D) ;
+                   @include icon(45px,45px,#26376D) ;
                     i{
                         color: $white;
                         font-size: 20px;
@@ -699,8 +699,7 @@
         .footer-menu-3{
             ul{
                 li{
-                    float: left;
-                   padding: 0px 10px;
+                    padding: 0px 5px;
                     a{
                         @include transition(0.3s);
                         font-family: $body-font;
