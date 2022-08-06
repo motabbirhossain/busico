@@ -247,6 +247,7 @@
 //5
 .btn-wepper{
     .bg-bth, .theme-btns{ 
+        overflow: hidden;
         @include transition(0.3s);
         border: 2px solid #C2C5D7;
         border-radius: 5px;
@@ -270,6 +271,20 @@
         }
     }
     .btns-plan{
+        overflow: hidden;
         padding: 15px 40px;
+    }
+    a{
+        i{
+            font-size: 14px;
+            padding: 10px 11px;
+            background-color: $white;
+            border-radius: 100%;
+        }
+        &:hover{
+            i{
+               color:$blue;
+            }
+        }
     }
 }

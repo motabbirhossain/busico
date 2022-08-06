@@ -9,6 +9,9 @@
     .it-wrapper{
         padding: 110px 0 110px 0 ;
         position: relative;
+        @media (max-width:768px) {
+            padding: 70px 0 70px 0 ;
+        }
         .banner-text{
             h6{
                 color: $second-color;
@@ -43,12 +46,24 @@
             position: absolute;
             right: -10%;
             top: 0%;
+            @media (max-width:1300px) {
+                position: absolute;
+                left:0%;
+            }
+            @media (max-width:768px) {
+                position: relative;
+                left:0%;
+            }
         }
     }
     //
     .brand-wepper{
         padding-top: 150px;
         padding-bottom: 100px;
+        @media (max-width:768px) {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
         .brand-head{
             h5{
                 font-size: 20px;
@@ -198,7 +213,15 @@
     .exprence-image{
         width: 100%;
         position: absolute;
-        left: -10%;
+        left: -17%;
+        @media (max-width:1300px) {
+            position: absolute;
+            left:0%;
+        }
+        @media (max-width:768px) {
+            position: relative;
+            left:0%;
+        }
     }
     .section-title-2{
         h5{
@@ -221,6 +244,9 @@
         }
         .info-service{
             margin: 25px 0px;
+            @media (max-width:768px) {
+                display: block !important;
+            }
             .enginiar{
                 .text{
                     padding-left: 30px;
@@ -244,23 +270,17 @@
             }
         }
     }
-    // .exprence-image{
-    //     position: absolute;
-    //     top: 0%;
-    //     left: -45%;
-    // }
-
-    // .shap-section-2{
-    //     position: absolute;
-    //     bottom: 40%;
-    //     right: 10%;
-    //     @media (max-width:1730px) {
-    //         right: 1%;
-    //     }
-    //     @media (max-width:1440px) {
-    //         display: none;
-    //     }
-    // }
+    .shap-section-2{
+        position: absolute;
+        top: 30%;
+        right: 5%;
+        @media (max-width:1730px) {
+            right: 1%;
+        }
+        @media (max-width:1440px) {
+            display: none;
+        }
+    }
 }
 .container-fluid-5{
     width: 1430px;
@@ -333,25 +353,48 @@
 .project-wrepper{
     padding-top: 110px;
     padding-bottom: 110px;
-    .product-filter{
-        .portfolio-cat-filter{
-            button{
-               @include transition(0.3s);
-                padding: 5px;
-                &::after{
-                    content: "\f00c";
-                    font-family: $fa;
-                    color: transparent;
+        .protfolio-button{
+            margin: 45px 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @media (max-width:865px) {
+                display: block;
+            }
+            .portfolio-cat-filter{
+                @media (max-width:865px) {
+                   margin-bottom: 45px;
                 }
-                &:hover{
-                    &::after{
-                        color: red;
-                    }
+                position: relative;
+                button{
+                   @include transition(0.3s);
+                    padding: 5px 20px;   
+                    text-transform: capitalize;
+                    font-size: 14px;
+                    box-shadow: none !important;
                 }
-                
+    
+            }
+            .portfolio-cat-filter button.active::before {
+                content: "\f00c";
+                font-family: "Font Awesome 5 Pro";
+                color: $second-color;
+                position: absolute;
+                font-weight: 300;
+                left: 0;
+                z-index: 99999;
+                top: 4px;
+            }
+            .portfolio-cat-filter button:hover{
+                background-color:transparent!important;
+                color: $second-color !important;
+            }
+            .portfolio-cat-filter button.active{
+                color: $second-color !important;
+                background-color:transparent!important;
             }
         }
-    }
+        
     .project{
         position: relative;
         .project-item-card{
@@ -807,26 +850,50 @@
         .client-img-left-1{
             top: 25%;
             left: 10%;
+            @media (max-width:1200px) {
+                top: 25%;
+                left: 5%;
+            }
         }
         .client-img-left-2{
             top: 50%;
             left: 25%;
+            @media (max-width:1200px) {
+                top: 50%;
+                left: 15%;
+            }
         }
         .client-img-left-3{
             top: 63%;
             left: 15%;
+            @media (max-width:1200px) {
+                top: 63%;
+                left: 7%;
+            }
         }
         .client-img-left-4{
             top: 25%;
             right: 10%;
+            @media (max-width:1200px) {
+                top: 25%;
+                right: 5%;
+            }
         }
         .client-img-left-5{
             top: 50%;
             right: 25%;
+            @media (max-width:1200px) {
+                top: 50%;
+                right: 15%;
+            }
         }
         .client-img-left-6{
             top: 63%;
             right: 15%;
+            @media (max-width:1200px) {
+                top: 63%;
+                right: 7%;
+            }
         }
     }
 }

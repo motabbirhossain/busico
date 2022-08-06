@@ -2102,6 +2102,7 @@ header ul, header li, footer ul, footer li {
 }
 
 .btn-wepper .bg-bth, .btn-wepper .theme-btns {
+  overflow: hidden;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   border: 2px solid #C2C5D7;
@@ -2126,7 +2127,17 @@ header ul, header li, footer ul, footer li {
   background-color: #001659;
 }
 .btn-wepper .btns-plan {
+  overflow: hidden;
   padding: 15px 40px;
+}
+.btn-wepper a i {
+  font-size: 14px;
+  padding: 10px 11px;
+  background-color: #FFF;
+  border-radius: 100%;
+}
+.btn-wepper a:hover i {
+  color: #01A0E1;
 }
 
 .preloader {
@@ -10040,6 +10051,11 @@ header .header-top-bar .top-social-icons a:hover {
   padding: 110px 0 110px 0;
   position: relative;
 }
+@media (max-width: 768px) {
+  .agency-wrapper .it-wrapper {
+    padding: 70px 0 70px 0;
+  }
+}
 .agency-wrapper .it-wrapper .banner-text h6 {
   color: #FF5E14;
   font-weight: 400;
@@ -10077,9 +10093,27 @@ header .header-top-bar .top-social-icons a:hover {
   right: -10%;
   top: 0%;
 }
+@media (max-width: 1300px) {
+  .agency-wrapper .it-wrapper .exprence-image {
+    position: absolute;
+    left: 0%;
+  }
+}
+@media (max-width: 768px) {
+  .agency-wrapper .it-wrapper .exprence-image {
+    position: relative;
+    left: 0%;
+  }
+}
 .agency-wrapper .brand-wepper {
   padding-top: 150px;
   padding-bottom: 100px;
+}
+@media (max-width: 768px) {
+  .agency-wrapper .brand-wepper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 .agency-wrapper .brand-wepper .brand-head h5 {
   font-size: 20px;
@@ -10243,7 +10277,19 @@ header .header-top-bar .top-social-icons a:hover {
 .exprence-wepper .exprence-image {
   width: 100%;
   position: absolute;
-  left: -10%;
+  left: -17%;
+}
+@media (max-width: 1300px) {
+  .exprence-wepper .exprence-image {
+    position: absolute;
+    left: 0%;
+  }
+}
+@media (max-width: 768px) {
+  .exprence-wepper .exprence-image {
+    position: relative;
+    left: 0%;
+  }
 }
 .exprence-wepper .section-title-2 h5 {
   color: #FF5E14;
@@ -10285,6 +10331,11 @@ header .header-top-bar .top-social-icons a:hover {
 .exprence-wepper .section-title-2 .info-service {
   margin: 25px 0px;
 }
+@media (max-width: 768px) {
+  .exprence-wepper .section-title-2 .info-service {
+    display: block !important;
+  }
+}
 .exprence-wepper .section-title-2 .info-service .enginiar .text {
   padding-left: 30px;
   position: relative;
@@ -10302,6 +10353,21 @@ header .header-top-bar .top-social-icons a:hover {
 }
 .exprence-wepper .section-title-2 .info-service .enginiar .text:hover::before {
   color: #D4D6F5;
+}
+.exprence-wepper .shap-section-2 {
+  position: absolute;
+  top: 30%;
+  right: 5%;
+}
+@media (max-width: 1730px) {
+  .exprence-wepper .shap-section-2 {
+    right: 1%;
+  }
+}
+@media (max-width: 1440px) {
+  .exprence-wepper .shap-section-2 {
+    display: none;
+  }
 }
 
 .container-fluid-5 {
@@ -10369,18 +10435,57 @@ header .header-top-bar .top-social-icons a:hover {
   padding-top: 110px;
   padding-bottom: 110px;
 }
-.project-wrepper .product-filter .portfolio-cat-filter button {
+.project-wrepper .protfolio-button {
+  margin: 45px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 865px) {
+  .project-wrepper .protfolio-button {
+    display: block;
+  }
+}
+.project-wrepper .protfolio-button .portfolio-cat-filter {
+  position: relative;
+}
+@media (max-width: 865px) {
+  .project-wrepper .protfolio-button .portfolio-cat-filter {
+    margin-bottom: 45px;
+  }
+}
+.project-wrepper .protfolio-button .portfolio-cat-filter button {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  padding: 5px;
+  padding: 5px 20px;
+  text-transform: capitalize;
+  font-size: 14px;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
-.project-wrepper .product-filter .portfolio-cat-filter button::after {
+.project-wrepper .protfolio-button .portfolio-cat-filter button.active::before {
   content: "\f00c";
   font-family: "Font Awesome 5 Pro";
-  color: transparent;
+  color: #FF5E14;
+  position: absolute;
+  font-weight: 300;
+  left: 0;
+  z-index: 99999;
+  top: 4px;
 }
-.project-wrepper .product-filter .portfolio-cat-filter button:hover::after {
-  color: red;
+.project-wrepper .protfolio-button .portfolio-cat-filter button:hover {
+  background-color: transparent !important;
+  color: #FF5E14 !important;
+}
+.project-wrepper .protfolio-button .portfolio-cat-filter button.active {
+  color: #FF5E14 !important;
+  background-color: transparent !important;
 }
 .project-wrepper .project {
   position: relative;
@@ -10888,25 +10993,61 @@ header .header-top-bar .top-social-icons a:hover {
   top: 25%;
   left: 10%;
 }
+@media (max-width: 1200px) {
+  .testimonial-wrapper .testimonial-carousel-wrapper .client-img-left-1 {
+    top: 25%;
+    left: 5%;
+  }
+}
 .testimonial-wrapper .testimonial-carousel-wrapper .client-img-left-2 {
   top: 50%;
   left: 25%;
+}
+@media (max-width: 1200px) {
+  .testimonial-wrapper .testimonial-carousel-wrapper .client-img-left-2 {
+    top: 50%;
+    left: 15%;
+  }
 }
 .testimonial-wrapper .testimonial-carousel-wrapper .client-img-left-3 {
   top: 63%;
   left: 15%;
 }
+@media (max-width: 1200px) {
+  .testimonial-wrapper .testimonial-carousel-wrapper .client-img-left-3 {
+    top: 63%;
+    left: 7%;
+  }
+}
 .testimonial-wrapper .testimonial-carousel-wrapper .client-img-left-4 {
   top: 25%;
   right: 10%;
+}
+@media (max-width: 1200px) {
+  .testimonial-wrapper .testimonial-carousel-wrapper .client-img-left-4 {
+    top: 25%;
+    right: 5%;
+  }
 }
 .testimonial-wrapper .testimonial-carousel-wrapper .client-img-left-5 {
   top: 50%;
   right: 25%;
 }
+@media (max-width: 1200px) {
+  .testimonial-wrapper .testimonial-carousel-wrapper .client-img-left-5 {
+    top: 50%;
+    right: 15%;
+  }
+}
 .testimonial-wrapper .testimonial-carousel-wrapper .client-img-left-6 {
   top: 63%;
   right: 15%;
+}
+@media (max-width: 1200px) {
+  .testimonial-wrapper .testimonial-carousel-wrapper .client-img-left-6 {
+    top: 63%;
+    right: 7%;
+  }
 }
 
 .company-wepper {
