@@ -833,6 +833,11 @@
                     line-height: 30px;
                     max-width: 600px;
                     margin: 0 auto;
+                    @media( max-width:768px) {
+                        padding-top: 30px;
+                        font-size: 16px;
+                        max-width: 470px;
+                    }
                 }
             }
            
@@ -854,12 +859,20 @@
             img{
                 width: 100px;
                 height: 100px;
+                @media( max-width:768px) {
+                    width: 70px;
+                    height: 70px;
+                }
             }
         }
         .client-img-left-1,.client-img-left-4{
             img{
                 width: 150px;
                 height: 150px;
+                @media( max-width:768px) {
+                    width: 100px;
+                    height: 100px;
+                }
             }
         }
         .client-img-left-1{

@@ -10987,6 +10987,13 @@ header .header-top-bar .top-social-icons a:hover {
   max-width: 600px;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .testimonial-wrapper .testimonial-carousel-wrapper .client-content .clinte-info p {
+    padding-top: 30px;
+    font-size: 16px;
+    max-width: 470px;
+  }
+}
 .testimonial-wrapper .testimonial-carousel-wrapper .client-content .icon {
   margin-top: 100px;
 }
@@ -11006,9 +11013,21 @@ header .header-top-bar .top-social-icons a:hover {
   width: 100px;
   height: 100px;
 }
+@media (max-width: 768px) {
+  .testimonial-wrapper .testimonial-carousel-wrapper .client-img-left-1 img, .testimonial-wrapper .testimonial-carousel-wrapper .client-img-left-2 img, .testimonial-wrapper .testimonial-carousel-wrapper .client-img-left-3 img, .testimonial-wrapper .testimonial-carousel-wrapper .client-img-left-4 img, .testimonial-wrapper .testimonial-carousel-wrapper .client-img-left-5 img, .testimonial-wrapper .testimonial-carousel-wrapper .client-img-left-6 img {
+    width: 70px;
+    height: 70px;
+  }
+}
 .testimonial-wrapper .testimonial-carousel-wrapper .client-img-left-1 img, .testimonial-wrapper .testimonial-carousel-wrapper .client-img-left-4 img {
   width: 150px;
   height: 150px;
+}
+@media (max-width: 768px) {
+  .testimonial-wrapper .testimonial-carousel-wrapper .client-img-left-1 img, .testimonial-wrapper .testimonial-carousel-wrapper .client-img-left-4 img {
+    width: 100px;
+    height: 100px;
+  }
 }
 .testimonial-wrapper .testimonial-carousel-wrapper .client-img-left-1 {
   top: 25%;
