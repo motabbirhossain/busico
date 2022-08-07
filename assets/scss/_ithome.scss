@@ -213,6 +213,7 @@
     .exprence-image{
         width: 100%;
         position: absolute;
+        top: 20%;
         left: -17%;
         @media (max-width:1300px) {
             position: absolute;
@@ -220,6 +221,7 @@
         }
         @media (max-width:768px) {
             position: relative;
+            top: 0%;
             left:0%;
         }
     }
@@ -232,7 +234,7 @@
             @include sectionhead-h1 ;
             font-size: 48px;
             margin-bottom:5px;
-            padding-bottom: 20px;
+            padding-bottom: 10px;
         }
         .subtitle{
             font-family: $body-font;
@@ -240,10 +242,10 @@
             font-weight: 400;
             font-size: 20px;
             line-height: 30px;
-            padding-bottom: 20px;
+            padding-bottom: 10px;
         }
         .info-service{
-            margin: 25px 0px;
+            margin: 15px 0px;
             @media (max-width:768px) {
                 display: block !important;
             }
@@ -281,10 +283,6 @@
             display: none;
         }
     }
-}
-.container-fluid-5{
-    width: 1430px;
-    margin: 0 auto;
 }
 //3
 .time-managment-wepper{
@@ -353,6 +351,10 @@
 .project-wrepper{
     padding-top: 110px;
     padding-bottom: 110px;
+    @media (max-width:768px) {
+        padding-top: 110px;
+        padding-bottom: 110px;
+    }
         .protfolio-button{
             margin: 45px 0px;
             display: flex;
@@ -399,6 +401,10 @@
         position: relative;
         .project-item-card{
             border-radius: 10px;
+            img{
+                height: 380px !important;
+                width: auto;
+            }
         }
         .item-bod-1{
             border: 40px solid #3FEE8B;
@@ -791,6 +797,15 @@
 
             .client-img{
                 position: relative;
+                height: 300px;
+                width: 300px;
+                margin: 0 auto; 
+                background-color: #EEF0F5;
+                @media (max-width:768px) {
+                    position: relative;
+                    height: 200px;
+                    width: 200px;
+                }
                 .qutoe{
                     position: absolute;
                     right: 20px;
@@ -850,50 +865,82 @@
         .client-img-left-1{
             top: 25%;
             left: 10%;
-            @media (max-width:1200px) {
+            @media (max-width:1366px) {
                 top: 25%;
                 left: 5%;
+            }
+            @media (max-width:1366px) {
+                top: 25%;
+                left: 0%;
             }
         }
         .client-img-left-2{
             top: 50%;
             left: 25%;
-            @media (max-width:1200px) {
+            @media (max-width:1366px) {
                 top: 50%;
                 left: 15%;
+            }
+            @media (max-width:1366px) {
+                top: 50%;
+                left: 5%;
             }
         }
         .client-img-left-3{
             top: 63%;
             left: 15%;
-            @media (max-width:1200px) {
+            @media (max-width:1366px) {
                 top: 63%;
                 left: 7%;
+            }
+            @media (max-width:1366px) {
+                top: 63%;
+                left: 0%;
             }
         }
         .client-img-left-4{
             top: 25%;
             right: 10%;
-            @media (max-width:1200px) {
+            @media (max-width:1366px) {
                 top: 25%;
                 right: 5%;
+            }
+            @media (max-width:1366px) {
+                top: 25%;
+                right: 0%;
             }
         }
         .client-img-left-5{
             top: 50%;
             right: 25%;
-            @media (max-width:1200px) {
+            @media (max-width:1366px) {
                 top: 50%;
                 right: 15%;
+            }
+            @media (max-width:1366px) {
+                top: 50%;
+                right:5%;
             }
         }
         .client-img-left-6{
             top: 63%;
             right: 15%;
-            @media (max-width:1200px) {
+            @media (max-width:1366px) {
                 top: 63%;
                 right: 7%;
             }
+            @media (max-width:1366px) {
+                top: 63%;
+                right: 0%;
+            }
+        }
+        .map-img{
+
+            @media (min-width:2120px) {
+                top: 20%;
+                left: 27%;
+            }
+
         }
     }
 }

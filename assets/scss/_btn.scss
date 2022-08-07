@@ -276,6 +276,9 @@
     }
     a{
         i{
+            position: absolute;
+            left: 5px;
+            top: 12px;
             font-size: 14px;
             padding: 10px 11px;
             background-color: $white;
