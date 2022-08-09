@@ -502,11 +502,6 @@
         
             .contact-info { 
                 overflow: hidden;
-
-                span { 
-        
-                }
-        
                 p { 
                     font-weight: 600;
                     color: #001248;
@@ -615,6 +610,11 @@
         background-color: $white;
         padding-top: 110px;
         .footer-cta-bg-wrapper{
+            padding: 70px 100px 80px 80px;
+            
+            @media (max-width: 768px) {
+                padding: 50px 70px 55px 55px;
+           }
             border-radius: 10px;
             background-color: $blue;
             .footer-middle-text{
@@ -630,6 +630,9 @@
                     font-size: 36px;
                     line-height: 48px;
                     text-transform: capitalize;
+                    @media (max-width:768px) {
+                        font-size: 20px;
+                    }
                 }
             }
         }

@@ -246,10 +246,10 @@
 }
 //5
 .btn-wepper{
+
     .bg-bth, .theme-btns{ 
         overflow: hidden;
         @include transition(0.3s);
-        border: 2px solid #C2C5D7;
         border-radius: 5px;
         padding: 20px 40px;
         color: #001659;
@@ -257,12 +257,21 @@
         font-weight: 500;
         background-color: transparent;
         &:hover{
-            border: 0px solid transparent;
+            color: $white;
+            background-color: $second-color;
+        }
+    }
+    .bg-bth{
+        border: 2px solid #C2C5D7;
+        padding: 18px 40px;
+        &:hover{
+            border: 2px solid $second-color;
             color: $white;
             background-color: $second-color;
         }
     }
     .theme-btns{
+        padding: 20px 40px;
         border: 0px solid #C2C5D7;
         color: $white;
         background-color: $second-color;
@@ -275,18 +284,22 @@
         padding: 15px 40px;
     }
     a{
+        font-size: 16px !important;
+        font-family: $body-font !important; 
+        font-weight: 500 !important;
+        font-size: 16px !important;
+        line-height: 19px !important;
         i{
-            position: absolute;
-            left: 5px;
-            top: 12px;
-            font-size: 14px;
+            margin-right: 15px;
+            font-size: 13px;
             padding: 10px 11px;
             background-color: $white;
+            color: $blue;
             border-radius: 100%;
         }
         &:hover{
             i{
-               color:$blue;
+               color:$second-color;
             }
         }
     }
