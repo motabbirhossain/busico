@@ -609,20 +609,32 @@
     .footer-cta-wrapper{
         background-color: $white;
         padding-top: 110px;
+        @media (max-width: 768px) {
+            padding-top:0px;
+       }
         .footer-cta-bg-wrapper{
-            padding: 70px 100px 80px 80px;
+            padding:80px 80px;
             
             @media (max-width: 768px) {
                 padding: 50px 70px 55px 55px;
            }
             border-radius: 10px;
-            background-color: $blue;
+            background-color: $theme-color-4;
+            background-image: url(../img/home5/fotter_p.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
             .footer-middle-text{
+                @media (max-width:768px) {
+                   margin-bottom: 30px;
+                }
                 h5{
                     font-weight: 400;
                     font-size: 15px;
                     line-height: 18px;
                     font-family: $body-font;
+                    @media (max-width:768px) {
+                        text-align: center;
+                    }
                 }
                 h2{
                     font-family: $body-font;
@@ -632,9 +644,22 @@
                     text-transform: capitalize;
                     @media (max-width:768px) {
                         font-size: 20px;
+                        line-height: 35px;
+                        text-align: center;
                     }
                 }
+
             }
+            .footer-btn{
+                @media (max-width:768px) {
+                    display: block !important;
+                    text-align: center;
+                }
+            }
+           
+        }
+        &::after{
+            height: 145px;
         }
     }
     .footer-widgets-wrapper{
@@ -685,6 +710,7 @@
             .call,.email,.location{
                 margin-top: 20px;
                 .icon{
+                    margin-top: 5px;
                     color: rgb(255 94 20);
                     text-align: center;
                     font-size: 24px;
@@ -699,7 +725,20 @@
 
     }
     .footer-bottom{
+        padding:0px;
+        hr{
+            border: 1px solid #152965;
+        }
+        .copyright-info{
+           p{
+            font-family: $body-font !important;
+            >a{
+                font-family: $body-font !important;
+            }
+           }
+        }
         .footer-menu-3{
+
             ul{
                 li{
                     padding: 0px 5px;

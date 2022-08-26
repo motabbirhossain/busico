@@ -302,6 +302,18 @@ header {
     }
 
     &.header-5{
+        @media (max-width:1248px) {
+            padding: 20px;
+        }
+        .logo{
+            a{
+                img{
+                   @media (max-width:768px) {
+                    width: 140px;
+                   }
+                }
+            }
+        }
         .main-menu{
             ul{
                 li{
@@ -317,6 +329,15 @@ header {
                             color: $secondary;
                         }
                     }
+                    > ul {
+                        li {
+                            a { 
+                                &:hover {
+                                    color: $second-color;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -325,7 +346,15 @@ header {
                 font-family:$body-font;
                 font-style: normal;
                 font-weight: 500;
+                padding: 20px 40px;
+                text-transform: capitalize;
+                margin-left: 0px;
             }
+        }
+        #hamburger{
+            @media (max-width:768px) {
+               font-size: 30px !important;
+               }
         }
     }
 
@@ -580,7 +609,14 @@ header {
     .sidebar-nav .metismenu ul a {
         padding: 10px 15px 10px 35px;
         position: relative;
-
+        &::before {
+            clear: both;
+            display: block;
+            content: "\f067";
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
         &:hover {
             padding-left: 40px;
             &::before {
@@ -617,6 +653,23 @@ header {
         text-decoration: none;
         color: #fff;
         background: $theme-dark;
+    }
+    .metismenu .has-arrow::after {
+        position: absolute;
+        content: '';
+        width: 0.5em;
+        height: 0.5em;
+        border-width: 1px 0 0 1px;
+        border-style: solid;
+        border-color: initial;
+        right: 1em;
+        transform: rotate(-45deg) translate(0, -50%);
+        transform-origin: top;
+        top: 50%;
+        transition: all .3s ease-out;
+    }
+    .metismenu .active > .has-arrow::after, .metismenu .has-arrow[aria-expanded="true"]::after {
+        transform: rotate(-135deg) translate(0, -50%);
     }
 
 }
